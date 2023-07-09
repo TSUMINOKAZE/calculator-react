@@ -1,0 +1,40 @@
+.board {
+	max-width: 18.75rem; /* 300px */
+	border-radius: 0.938rem; /* 15px */
+	overflow: hidden;
+
+	&-header {
+		margin-bottom: 0.188rem; /* 3px */
+		padding-top: 0.313rem; /* 5px */
+		background-color: var(--grey);
+
+		span {
+			display: block;
+			padding-right: 0.714em; /* 10px */
+			text-align: right;
+			font-size: 0.875rem; /* 14px */
+			font-weight: 600;
+			color: var(--grey-dark);
+		}
+
+		input {
+			text-align: right;
+		}
+	}
+
+	&-btn {
+		display: -ms-grid;
+		display: grid;
+
+		-ms-grid-rows: 1fr 3px 1fr 3px 1fr 3px 1fr 3px 1fr;
+		-ms-grid-columns: 1fr 3px 1fr 3px 1fr 3px 1fr;
+		grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+
+		grid-gap: 0.188rem; /* 3px */
+
+		& > *:last-child {
+			-ms-grid-column-span: 2;
+			grid-column: span 2;
+		}
+	}
+}

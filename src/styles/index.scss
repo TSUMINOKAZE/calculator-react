@@ -1,0 +1,45 @@
+:root {
+	--primary: #d8511c;
+	--primary-light: #db6d41;
+	--primary-dark: #a5421b;
+
+	--black: #232323;
+	--black-light: #263f48;
+	--black-extra: #0f0f0f;
+
+	--grey: #b4b4b4;
+	--grey-dark: #89908c;
+
+	--white: #c4d2d4;
+	--aqua-dark: #3eb2ab;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body {
+	min-width: 320px;
+	font: normal 400 1rem / 1 Arial, Helvetica, sans-serif;
+	color: var(--white);
+}
+
+#root {
+	display: -ms-grid;
+	display: grid;
+
+	place-items: center;
+
+	width: 100%;
+	min-width: 320px;
+	min-height: 100vh;
+	background-color: var(--aqua-dark);
+	overflow: hidden;
+}
